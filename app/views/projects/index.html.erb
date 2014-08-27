@@ -1,5 +1,11 @@
 <%= link_to new_project_path do %>
-  bunch
-  of
-  text 
+  new
+  project 
 <% end %>
+
+<h2>Projects</h2>
+<ul>
+  <% @projects.each do |project| %>
+    <li><%= link_to project.name, project %></li>
+  <% end %>
+</ul>
