@@ -11,11 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20140829095924) do
-=======
-ActiveRecord::Schema.define(version: 20140828083758) do
->>>>>>> FETCH_HEAD
 
   create_table "projects", force: true do |t|
     t.string   "name"
@@ -30,7 +26,6 @@ ActiveRecord::Schema.define(version: 20140828083758) do
     t.integer  "project_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-<<<<<<< HEAD
     t.integer  "user_id"
   end
 
@@ -39,21 +34,11 @@ ActiveRecord::Schema.define(version: 20140828083758) do
 
   create_table "users", force: true do |t|
     t.string   "name"
-=======
-  end
-
-  add_index "tickets", ["project_id"], name: "index_tickets_on_project_id"
-
-  create_table "users", force: true do |t|
->>>>>>> FETCH_HEAD
     t.string   "email"
     t.string   "password_digest"
     t.datetime "created_at"
     t.datetime "updated_at"
-<<<<<<< HEAD
     t.boolean  "admin",           default: false
-=======
->>>>>>> FETCH_HEAD
   end
 
 end
