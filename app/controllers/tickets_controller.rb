@@ -1,7 +1,10 @@
 class TicketsController < ApplicationController
 	before_action :set_project
 	before_action :set_ticket, only: [:show, :edit, :update, :destroy]
+<<<<<<< HEAD
 	before_action :require_signin!, expect: [:show, :index]
+=======
+>>>>>>> FETCH_HEAD
 
 	def new
 		@ticket = @project.tickets.build
@@ -9,7 +12,10 @@ class TicketsController < ApplicationController
 
 	def create
 		@ticket = @project.tickets.build(ticket_params)
+<<<<<<< HEAD
 		@ticket.user = current_user
+=======
+>>>>>>> FETCH_HEAD
 		if @ticket.save
 			flash[:notice] = "Ticket has been created."
 			redirect_to [@project, @ticket]
