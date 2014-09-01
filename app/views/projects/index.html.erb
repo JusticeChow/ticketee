@@ -1,6 +1,5 @@
-<%= link_to new_project_path do %>
-  new
-  project 
+<% admins_only do %>
+  <%= link_to "New Project", new_project_path %>
 <% end %>
 
 <h2>Projects</h2>
